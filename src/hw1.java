@@ -4,4 +4,5 @@ public class hw1 {
 
 
 
+   int lad = 0 ;
 }
