@@ -99,47 +99,36 @@ public class hw1 {
             }
         }
     }
-    public static int checkFriends1(int [][]mat, int i, int j,int n, int m)
+    public static boolean checkFriends1(int [][]mat, int i, int j,int n, int m)
     {
         int counter=0;
-        if (mat[i][j]==1)
-        {
-            if((i>0)&&(mat[i-1][j]==1))
-            {
+        if (mat[i][j]==1) {
+            if ((i > 0) && (mat[i - 1][j] == 1)) {
                 counter++;
-                if((j<n-1)&&(mat[i-1][j+1]==1))
-                {
+                if ((j < n - 1) && (mat[i - 1][j + 1] == 1)) {
                     counter++;
                 }
 
             }
-            if((j>0)&&(mat[i][j-1]==1))
-            {
+            if ((j > 0) && (mat[i][j - 1] == 1)) {
                 counter++;
             }
-            if((i<n)&&(mat[i+1][j]==1))
-            {
+            if ((i < n) && (mat[i + 1][j] == 1)) {
                 counter++;
             }
-            if((j<n)&&(mat[i][j+1]==1))
-            {
+            if ((j < n) && (mat[i][j + 1] == 1)) {
                 counter++;
             }
-            if((j>0)&&(i>0)&&(mat[i-1][j-1]==1))
-            {
+            if ((j > 0) && (i > 0) && (mat[i - 1][j - 1] == 1)) {
                 counter++;
             }
-            if((j<n)&&(i<m)&&mat[i+1][j+1]==1)
-            {
+            if ((j < n) && (i < m) && mat[i + 1][j + 1] == 1) {
                 counter++;
             }
-
-
-
 
 
         }
-         return counter;
+         return false;
 
 
     }
