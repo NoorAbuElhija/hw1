@@ -126,7 +126,6 @@ public class hw1 {
                 counter++;
             }
 
-
         }
          return false;
 
